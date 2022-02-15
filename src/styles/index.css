@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;   
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .55), rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)); */
+    background-color: rgba(0, 0, 0, .2);
+    transition: background-color 0.2s;
+}
+
+nav p {
+    color: white;
+}
+
+main {    
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+}
+
+header, section {
+    scroll-snap-align: start;
+    scroll-margin-top: 100px;
+    height: calc(100vh - 100px);
+    width: 100%;
+    border: solid red;
+}
+
+header {
+    background-image: url("../media/VI_Day.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+section {
+    /* background-color: wheat; */
+}
