@@ -36,6 +36,10 @@ const changeHeaderBkGd = () => {
     }
 }
 
+const toTop = () => {
+    main.scrollTo(0, 0);
+}
+
 main.addEventListener("scroll", toggleNav);
 changeHeaderBkGd();
 

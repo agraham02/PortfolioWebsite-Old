@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hey, I'm Ahmad, a computer scientist based in the DMV. Check out my portfolio!">
     <title>Ahmad Graham | Portfolio</title>
     <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/flickity.css" media="screen">
 </head>
 <body>
     <nav id="nav">
-        <p>AG</p>
+        <a href="#" class="logo" onclick="toTop()">AG</a>
         <div class="links">
             <a href="#projects">Projects</a>
             <a href="#about-me">About Me</a>
@@ -19,10 +21,18 @@
     </nav>
     <main id="main">
         <header id="header">
-    
+            <h1>Ahmad Graham</h1>
         </header>
         <section id="projects">
             <h2>Projects</h2>
+            <div class="carousel js-flickity"
+            data-flickity-options='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+            </div>
         </section>
         <section id="about-me">
             <h2>About Me</h2>
@@ -34,6 +44,7 @@
             <h2>Contact Me</h2>
         </section>
     </main>
-    <script src="./src/scripts/test.js"></script>
+    <script src="./src/scripts/UIScripts.js"></script>
+    <script src="./src/scripts/flickity.pkgd.min.js"></script>
 </body>
 </html>
