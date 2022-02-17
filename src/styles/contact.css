@@ -5,3 +5,43 @@ section#contact-me {
 section#contact-me .content {
     /* height: 150%; */
 }
+
+.social-links-container {
+    border: solid blue;
+    width: 30%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .social-links-container {
+        width: 90%;
+    }
+}
+
+.social-links-container .link-btn {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links-container .fa-solid, .fa-brands {
+    font-size: 2em;
+    color: white;
+}
+
+.instagram {background-image: linear-gradient(to top right, #fcaf45, #c13584);}
+.github {background-color: #333;}
+.twitter {background-color: #1da1f2;}
+.email {background-color: #ea4335;}
+.linktree {background-color: #333;}
+.facebook {background-color: #1877f2;}
+.linkedin {background-color: #0077b5;}
+.fiverr {background-color: #00b22d;}
