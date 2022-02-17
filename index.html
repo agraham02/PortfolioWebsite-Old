@@ -7,6 +7,10 @@
     <meta name="description" content="Hey, I'm Ahmad, a computer scientist based in the DMV. Check out my portfolio!">
     <title>Ahmad Graham | Portfolio</title>
     <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/projects.css">
+    <link rel="stylesheet" href="./src/styles/about.css">
+    <link rel="stylesheet" href="./src/styles/skills.css">
+    <link rel="stylesheet" href="./src/styles/contact.css">
     <link rel="stylesheet" href="./src/styles/flickity.css" media="screen">
 </head>
 <body>
@@ -21,30 +25,62 @@
     </nav>
     <main id="main">
         <header id="header">
-            <h1>Ahmad Graham</h1>
+            <div class="dark-filter"></div>
+            <div class="title">
+                <h1>Ahmad Graham</h1>
+            </div>
+            <div class="bottom">
+                <a href="#projects"><i class="fa-solid fa-angle-down"></i></a>            
+            </div>
         </header>
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="carousel js-flickity"
-            data-flickity-options='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
+            <div class="title">
+                <h2>Projects</h2>
+            </div>
+            <div class="content">
+                <div class="carousel js-flickity"
+                data-flickity-options='{ "cellAlign": "center", "contain": true, "wrapAround": true , "autoPlay": true}'>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                    <div class="gallery-cell"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="github-btn">View more on my GitHub</button>                
             </div>
         </section>
         <section id="about-me">
-            <h2>About Me</h2>
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+            </div>
+            <div class="bottom">             
+            </div>
         </section>
         <section id="skills">
-            <h2>My Skills</h2>
+            <div class="title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="content">
+            </div>
+            <div class="bottom">             
+            </div>
         </section>
         <section id="contact-me">
-            <h2>Contact Me</h2>
+            <div class="title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="content">
+            </div>
+            <div class="bottom">             
+            </div>
         </section>
     </main>
     <script src="./src/scripts/UIScripts.js"></script>
     <script src="./src/scripts/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/caafbc60ab.js" crossorigin="anonymous"></script>
 </body>
 </html>

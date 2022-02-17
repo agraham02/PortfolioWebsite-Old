@@ -20,9 +20,9 @@ nav {
     width: 100%;
     position: fixed;
     /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .55), rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)); */
-    background-color: rgba(0, 0, 0, .2);
-    transition: background-color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
     z-index: 10;
+    
 
     display: flex;
     align-items: center;
@@ -77,7 +77,40 @@ header, section {
     height: calc(100vh - 100px);
     width: 100%;
     border: solid red;
-    /* height: 150%; */
+}
+
+header .title, section .title {
+    border: solid red;
+    height: 10%;
+    font-size: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .content {
+    border: solid red;
+    height: 75%;
+}
+
+header .bottom, section .bottom {
+    border: solid red;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .title {
+    height: 90%;
+    
+}
+
+header .bottom {
+    height: 10%;
+    z-index: 5;
 }
 
 header {
@@ -87,42 +120,46 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    position: relative;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header .dark-filter {
+    border: solid blue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
 
 section {
-    /* background-color: wheat; */
-}
-
-section.projects {
 
 }
 
-section#projects .gallery-cell {
-    width: 50%;
-    height: 200px;
-    border: solid red;
-    margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-}
-
-
-
-/* cell number */
-section#projects .gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
+h1 {
     color: white;
+    z-index: 5;
+    text-align: center;
 }
 
-section#projects .gallery-cell.is-selected {
-    background: #ED2;
+@keyframes downArrow {
+    0% {bottom: 20px;}
+    5% {bottom: 0;}
+    10% {bottom: 10px;}
+    15% {bottom: 0;}
+    20% {bottom: 20px;}
+    100% {bottom: 20px;}
+}
+
+.fa-angle-down {
+    position: relative;
+    bottom: 20px;
+    color: white;
+    font-size: 3.5em;
+    animation-name: downArrow;
+    animation-duration: 4s;
+    /* animation-timing-function: ease-in-out; */
+    animation-iteration-count: infinite;
+    z-index: 5;
 }
 

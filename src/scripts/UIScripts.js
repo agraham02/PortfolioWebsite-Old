@@ -8,10 +8,18 @@ const contactMe = document.getElementById("contact-me");
 
 const toggleNav = () => {
     if (main.scrollTop > header.scrollHeight / 2) {
-        nav.style.backgroundColor = "#333";
+        nav.style.backgroundColor = "white";
+        nav.style.borderBottom = "solid black";
+        nav.children[0].style.color = "black";
+        nav.children[0].style.border = "solid black";
+        [...nav.children[1].children].forEach(e => e.style.color = "black");
     }
     else {
-        nav.style.backgroundColor = "rgba(0, 0, 0, .2)";
+        nav.style.backgroundColor = "rgba(0,0,0,0)";
+        nav.style.borderBottom = "none";
+        nav.children[0].style.color = "white";
+        nav.children[0].style.border = "solid white";
+        [...nav.children[1].children].forEach(e => e.style.color = "white");
     }
     console.log(main.scrollTop);
 }
