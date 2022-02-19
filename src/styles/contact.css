@@ -3,27 +3,73 @@ section#contact-me {
 }
 
 section#contact-me .content {
-    /* height: 150%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    flex-grow: 1;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: .7em 1em;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin: 3px 0 15px;
+    border: solid black;
+}
+
+#fName {
+    width: 100%;
+    height: 8%;
+}
+
+#lName {
+    width: 100%;
+    height: 8%;
+}
+
+#email {
+    width: 100%;
+    height: 8%;
+}
+
+#message {
+    width: 100%;
+    height: 35%;
+    resize: none;
+}
+
+#submit {
+    margin: 0 auto;
+    background-color: royalblue;
+    color: white;
 }
 
 .social-links-container {
-    border: solid blue;
-    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-    .social-links-container {
-        width: 90%;
-    }
+
+.social-links-container a {
+    display: inline-block;
 }
 
-.social-links-container .link-btn {
-    height: 75px;
-    width: 75px;
+.social-links-container .link-btn {    
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     margin: 10px;
 
@@ -33,7 +79,7 @@ section#contact-me .content {
 }
 
 .social-links-container .fa-solid, .fa-brands {
-    font-size: 2em;
+    font-size: 1.5em;
     color: white;
 }
 
@@ -45,3 +91,28 @@ section#contact-me .content {
 .facebook {background-color: #1877f2;}
 .linkedin {background-color: #0077b5;}
 .fiverr {background-color: #00b22d;}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+    form {
+        width: 60%;
+        margin: 0 auto;
+        flex-grow: 1;
+    }
+
+    .social-links-container {
+        width: 100%;
+    }
+
+    .social-links-container .link-btn {
+        height: 75px;
+        width: 75px;
+    }
+
+    .social-links-container .fa-solid, .fa-brands {
+        font-size: 2em;
+    }
+}
