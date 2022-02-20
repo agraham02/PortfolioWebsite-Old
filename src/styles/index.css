@@ -164,3 +164,20 @@ h1 {
     z-index: 5;
 }
 
+.lS-warning {
+    display: none;
+}
+
+@media screen and (max-width: 500px) and (orientation: landscape) {
+    .lS-warning {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: solid red;
+        width: 100vw;
+        height: 100vh;
+        background-color: pink;
+        z-index: 20;
+    }
+}

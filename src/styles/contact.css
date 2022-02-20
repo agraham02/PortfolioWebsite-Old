@@ -51,6 +51,7 @@ input, textarea {
     margin: 0 auto;
     background-color: royalblue;
     color: white;
+    cursor: pointer;
 }
 
 .social-links-container {
@@ -72,6 +73,7 @@ input, textarea {
     width: 50px;
     border-radius: 50%;
     margin: 10px;
+    text-decoration: none;
 
     display: flex;
     justify-content: center;
@@ -84,13 +86,13 @@ input, textarea {
 }
 
 .instagram {background-image: linear-gradient(to top right, #fcaf45, #c13584);}
-.github {background-color: #333;}
-.twitter {background-color: #1da1f2;}
-.email {background-color: #ea4335;}
-.linktree {background-color: #333;}
-.facebook {background-color: #1877f2;}
-.linkedin {background-color: #0077b5;}
-.fiverr {background-color: #00b22d;}
+.github {background-color: hsl(0, 0%, 20%);}
+.twitter {background-color: hsl(203, 89%, 53%);}
+.email {background-color: hsl(5, 81%, 56%);}
+.linktree {background-color: hsl(0, 0%, 20%);}
+.facebook {background-color: hsl(214, 89%, 52%);}
+.linkedin {background-color: hsl(201, 100%, 35%);}
+.fiverr {background-color: hsl(135, 100%, 35%);}
 
 footer {
     text-align: center;
