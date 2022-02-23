@@ -77,11 +77,11 @@ header, section {
     scroll-margin-top: 100px;
     height: calc(100vh - 100px);
     width: 100%;
-    border: solid red;
+    /* border: solid red; */
 }
 
 header .title, section .title {
-    border: solid red;
+    /* border: solid red; */
     height: 10%;
     font-size: 2em;
 
@@ -91,12 +91,12 @@ header .title, section .title {
 }
 
 section .content {
-    border: solid red;
+    /* border: solid red; */
     height: 75%;
 }
 
 header .bottom, section .bottom {
-    border: solid red;
+    /* border: solid red; */
     height: 15%;
 
     display: flex;
@@ -125,7 +125,7 @@ header {
 }
 
 header .dark-filter {
-    border: solid blue;
+    /* border: solid blue; */
     position: absolute;
     width: 100%;
     height: 100%;
