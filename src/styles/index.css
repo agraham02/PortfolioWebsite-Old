@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     width: 100%;  
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main::-webkit-scrollbar {
@@ -69,6 +69,13 @@ main {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
+    background-color: black;
+
+    background-image: url("../media/circle-scatter-haikei.png");
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: initial;
 }
 
 header, section {
@@ -78,6 +85,7 @@ header, section {
     height: calc(100vh - 100px);
     width: 100%;
     /* border: solid red; */
+    background-color: white;
 }
 
 header .title, section .title {
@@ -106,7 +114,13 @@ header .bottom, section .bottom {
 
 header .title {
     height: 90%;
-    
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+h1, header p {
+    z-index: 5;
 }
 
 header .bottom {
@@ -119,7 +133,7 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: initial;
     height: 100vh;
     position: relative;
 }
@@ -134,14 +148,10 @@ header .dark-filter {
 }
 
 section {
-
+    margin-top: 50vh;
 }
 
-h1 {
-    color: white;
-    z-index: 5;
-    text-align: center;
-}
+
 
 @keyframes downArrow {
     0% {bottom: 20px;}
@@ -164,8 +174,37 @@ h1 {
     z-index: 5;
 }
 
+.btn {
+    margin: 3% auto;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px #999;
+    color: white;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    height: 100%;
+    width: 100%;    
+    padding: 20px 30px;
+}
+
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+}
+
 .lS-warning {
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    main, header {
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (max-width: 500px) and (orientation: landscape) {
@@ -181,3 +220,4 @@ h1 {
         z-index: 20;
     }
 }
+

@@ -1,0 +1,25 @@
+#experience .pdf-btn {
+    background-color: hsl(147, 67%, 27%);
+    /* box-shadow: 0 8px hsl(147, 40%, 80%); */
+}
+
+#experience .pdf-btn:hover {
+    background-color: hsl(147, 67%, 33%);
+}
+
+#experience .pdf-btn:active {
+    box-shadow: 0 5px #666;
+}
+
+#experience .docx-btn {
+    background-color: #185abd;
+    /* box-shadow: 0 8px hsl(216, 77%, 80%); */
+}
+
+#experience .docx-btn:hover {
+    background-color: hsl(216, 77%, 50%);
+}
+
+#experience .docx-btn:active {
+    /* box-shadow: 0 5px #666; */
+}

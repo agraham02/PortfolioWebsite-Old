@@ -1,0 +1,11 @@
+(header) I am a computer scientist who believes that quality is everything.
+
+Hey there! My name is Ahmad and I am a second-year computer science student studying in the DMV area.
+
+I have been programming for over 4 years (since 2018).
+
+Although my main focus is computer science, I am also self-taught in full stack web development (front-end and back-end).
+
+I am currently looking to use my problem solving skills either as a freelancer or in a software development role.
+
+I am currently looking for work as a software developer 
