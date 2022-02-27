@@ -1,3 +1,73 @@
+#experience .content {
+    padding: 15px;
+}
+
+#experience .gallery-cell {
+    margin-bottom: 15px;
+}
+
+#experience .gallery-cell .item > * {
+    /* margin-bottom: 5px; */
+}
+
+.item .bars {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item .bars > * {
+    border: solid black;
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 5px 0;
+    border-radius: 30px;
+    background-color: hsl(219, 80%, 45%);
+}
+
+/* Languages */
+.item.html .bars > *{
+    /* background-color: blue; */
+}
+.item.java .bars > *{
+    /* background-color: blue; */
+}
+.item.javascript .bars > *{
+    /* background-color: blue; */
+}
+.item.csh .bars > *{
+    /* background-color: blue; */
+}
+.item.c .bars > *{
+    /* background-color: blue; */
+} .item.c .bars .four {background-color: initial;}
+.item.python .bars > *{
+    /* background-color: blue; */
+} .item.python .bars .four {background-color: initial;}
+.item.markdown .bars > *{
+    /* background-color: blue; */
+}
+
+/* Libraries */
+.item.react .bars > *{
+    /* background-color: blue; */
+}
+.item.redux .bars > *{
+    /* background-color: blue; */
+} .item.redux .bars .four {background-color: initial;}
+
+/* Services */
+.item.unity .bars > *{
+    /* background-color: blue; */
+} .item.unity .bars .four {background-color: initial;}
+.item.git .bars > *{
+    /* background-color: blue; */
+} .item.git .bars .four {background-color: initial;}
+
+/* General */
+
 #experience .pdf-btn {
     background-color: hsl(147, 67%, 27%);
     /* box-shadow: 0 8px hsl(147, 40%, 80%); */

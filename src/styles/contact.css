@@ -1,8 +1,8 @@
-section#contact-me {
+section#contact {
     /* min-height: 100%; */
 }
 
-section#contact-me .content {
+section#contact .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

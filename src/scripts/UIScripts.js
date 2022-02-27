@@ -48,6 +48,18 @@ const toTop = () => {
     main.scrollTo(0, 0);
 }
 
+const timeContainer = document.getElementById("seconds");
+const firstDay = "8-30-2018";
+const firstDayDate = new Date(firstDay);
+const numFormatter = new Intl.NumberFormat("en-US");
+
+setInterval(() => {
+    const now = new Date();
+    const diff = Math.floor((now.getTime() - firstDayDate.getTime()) / 1000);
+
+    timeContainer.innerText = numFormatter.format(diff);
+}, 1000);
+
 main.addEventListener("scroll", toggleNav);
 changeHeaderBkGd();
 
