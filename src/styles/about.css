@@ -1,11 +1,24 @@
 #about .content {
-    padding: 20px;
+    /* padding: 10px; */
+    /* border: solid red; */
+    font-size: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #about .content p {
     text-align: center;
-    margin: 30px;
-    font-size: 1.5em;
+    margin: 20px;
+}
+
+#about hr {
+    width: 15%;
+    border: 1px solid #616161;
+    border-radius: 30px;
+    margin: 5px;
 }
 
 aside {
@@ -14,4 +27,17 @@ aside {
     color: #707070;
     text-align: center;
     padding: 10px 25px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767px) {
+    #about .content {
+        margin: 0 10%;
+    }
+
+    #about hr {
+        margin: 1% 0;
+        width: 5%;
+    }
 }

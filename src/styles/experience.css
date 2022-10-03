@@ -1,13 +1,41 @@
 #experience .content {
     padding: 15px;
+    overflow-y: auto;
 }
 
-#experience .gallery-cell {
+#experience .section-container {
     margin-bottom: 15px;
+    /* border: solid red; */
 }
 
-#experience .gallery-cell .item > * {
+#experience .section-container .skills-header {
+    display: flex;
+    justify-content: space-between;
+    /* border: solid red; */
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+#experience .section-container .items {
     /* margin-bottom: 5px; */
+    /* border: solid blue; */
+    display: none;
+    padding: 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+#experience .section-container .item {
+    margin-bottom: 12px;
+    /* border: solid blue; */
+}
+
+#experience .section-container .item > * {
+    padding: 2.5px;
 }
 
 .item .bars {
@@ -22,49 +50,74 @@
     border: solid black;
     flex-grow: 1;
     margin: 0 10px;
-    padding: 5px 0;
+    padding: 6px;
     border-radius: 30px;
     background-color: hsl(219, 80%, 45%);
 }
 
 /* Languages */
-.item.html .bars > *{
+.item.html .bars > * {
     /* background-color: blue; */
 }
-.item.java .bars > *{
+.item.java .bars > * {
     /* background-color: blue; */
 }
-.item.javascript .bars > *{
+.item.javascript .bars > * {
     /* background-color: blue; */
 }
-.item.csh .bars > *{
+.item.csh .bars > * {
     /* background-color: blue; */
 }
-.item.c .bars > *{
+.item.csh .bars .four {
+    background-color: initial;
+}
+.item.c .bars > * {
     /* background-color: blue; */
-} .item.c .bars .four {background-color: initial;}
-.item.python .bars > *{
+}
+.item.c .bars .four {
+    background-color: initial;
+}
+.item.python .bars > * {
     /* background-color: blue; */
-} .item.python .bars .four {background-color: initial;}
-.item.markdown .bars > *{
+}
+.item.python .bars .four {
+    background-color: initial;
+}
+.item.markdown .bars > * {
     /* background-color: blue; */
+}
+.item.sql .bars .four {
+    background-color: initial;
 }
 
 /* Libraries */
-.item.react .bars > *{
+.item.react .bars > * {
     /* background-color: blue; */
 }
-.item.redux .bars > *{
+.item.react .bars .four {
+    background-color: initial;
+}
+.item.redux .bars > * {
     /* background-color: blue; */
-} .item.redux .bars .four {background-color: initial;}
+}
+.item.redux .bars .four,
+.item.redux .bars .three {
+    background-color: initial;
+}
 
 /* Services */
-.item.unity .bars > *{
+.item.unity .bars > * {
     /* background-color: blue; */
-} .item.unity .bars .four {background-color: initial;}
-.item.git .bars > *{
+}
+.item.unity .bars .four {
+    background-color: initial;
+}
+.item.git .bars > * {
     /* background-color: blue; */
-} .item.git .bars .four {background-color: initial;}
+}
+.item.git .bars .four {
+    background-color: initial;
+}
 
 /* General */
 
@@ -92,4 +145,12 @@
 
 #experience .docx-btn:active {
     /* box-shadow: 0 5px #666; */
+}
+
+@media screen and (min-width: 767px) {
+    #experience .content {
+        padding-left: 10%;
+        padding-right: 10%;
+        overflow-y: auto;
+    }
 }

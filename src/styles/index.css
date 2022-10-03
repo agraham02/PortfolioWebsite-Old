@@ -5,10 +5,15 @@
     padding: 0;
 }
 
+html {
+    font-size: 12px;
+}
+
 body {
     height: 100vh;
-    width: 100%;  
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 12px; */
 }
 
 main::-webkit-scrollbar {
@@ -22,7 +27,6 @@ nav {
     /* background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .55), rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)); */
     transition: background-color 0.2s, color 0.2s;
     z-index: 10;
-    
 
     display: flex;
     align-items: center;
@@ -34,22 +38,48 @@ nav > * {
 }
 
 nav .logo {
-    font-size: 20px;
+    font-size: 1.6em;
     color: white;
     border: solid white;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     display: inline-block;
     border-radius: 5px;
     text-decoration: none;
 }
 
+#hamburgerIcon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav .hamburger-bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+nav .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+nav .change .bar2 {
+    opacity: 0;
+}
+
+nav .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
 nav .links {
     /* height: auto; */
+    display: none;
 }
 
 nav .links a {
-    padding: .5em;
-    margin: .2em .5em;
+    padding: 0.5em;
+    margin: 0.2em 0.5em;
     display: inline-block;
     border: solid rgba(0, 0, 0, 0);
     text-decoration: none;
@@ -61,13 +91,51 @@ nav .links a:hover {
     border-bottom: solid rgb(255, 255, 255);
 }
 
-main {    
+#mobileOverlay {
+    height: 100%;
+    z-index: 9;
+    width: 0%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#mobileOverlay .links {
+    /* border: solid red; */
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mobileOverlay .links a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 2.8em;
+    color: #818181;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+#mobileOverlay .links a:hover,
+#mobileOverlay .links a:focus {
+    color: #f1f1f1;
+}
+
+main {
     width: 100%;
     height: 100%;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     scroll-behavior: smooth;
     background-color: black;
 
@@ -78,7 +146,8 @@ main {
     background-attachment: initial;
 }
 
-header, section {
+header,
+section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
     scroll-margin-top: 100px;
@@ -86,24 +155,37 @@ header, section {
     width: 100%;
     /* border: solid red; */
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-header .title, section .title {
+header .title,
+section .title {
     /* border: solid red; */
-    height: 10%;
-    font-size: 2em;
+    height: 15%;
+    font-size: 2.5rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section .content {
-    /* border: solid red; */
-    height: 75%;
+header .title {
+    margin: 5px;
 }
 
-header .bottom, section .bottom {
+header .title .extra {
+    font-size: 2.3rem;
+    margin: 8px 10px;
+}
+
+section .content {
+    /* border: solid red; */
+    height: 70%;
+}
+
+header .bottom,
+section .bottom {
     /* border: solid red; */
     height: 15%;
 
@@ -119,7 +201,8 @@ header .title {
     color: white;
 }
 
-h1, header p {
+h1,
+header p {
     z-index: 5;
 }
 
@@ -151,18 +234,28 @@ section {
     margin-top: 50vh;
 }
 
-
-
 @keyframes downArrow {
-    0% {bottom: 20px;}
-    5% {bottom: 0;}
-    10% {bottom: 10px;}
-    15% {bottom: 0;}
-    20% {bottom: 20px;}
-    100% {bottom: 20px;}
+    0% {
+        bottom: 20px;
+    }
+    5% {
+        bottom: 0;
+    }
+    10% {
+        bottom: 10px;
+    }
+    15% {
+        bottom: 0;
+    }
+    20% {
+        bottom: 20px;
+    }
+    100% {
+        bottom: 20px;
+    }
 }
 
-.fa-angle-down {
+header .fa-angle-down {
     position: relative;
     bottom: 20px;
     color: white;
@@ -188,8 +281,8 @@ section {
     color: white;
     display: inline-block;
     height: 100%;
-    width: 100%;    
-    padding: 20px 30px;
+    width: 100%;
+    padding: 15px 20px;
 }
 
 .btn:active {
@@ -201,9 +294,22 @@ section {
     display: none;
 }
 
-@media screen and (min-width: 768px) {
-    main, header {
+@media screen and (min-width: 767px) {
+    html {
+        font-size: 16px;
+    }
+
+    main,
+    header {
         background-attachment: fixed;
+    }
+
+    #hamburgerIcon {
+        display: none;
+    }
+
+    nav .links {
+        display: block;
     }
 }
 
@@ -220,4 +326,3 @@ section {
         z-index: 20;
     }
 }
-

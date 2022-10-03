@@ -1,11 +1,20 @@
 section#contact {
     /* min-height: 100%; */
+    justify-content: center;
+    /* align-items: center; */
+    /* border: solid blue; */
+    overflow-y: auto;
+}
+
+#contact .title {
+    /* border: solid green; */
 }
 
 section#contact .content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    /* border: solid pink; */
 }
 
 form {
@@ -13,13 +22,14 @@ form {
     margin: 0 auto;
     padding: 5px;
     flex-grow: 1;
-    
+
     display: flex;
     flex-direction: column;
 }
 
-input, textarea {
-    padding: .7em 1em;
+input,
+textarea {
+    padding: 0.7em 1em;
     background-color: #f8f8f8;
     border-radius: 4px;
     margin: 3px 0 15px;
@@ -56,23 +66,28 @@ input, textarea {
 
 .social-links-container {
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
+    height: 70%;
 
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    /* border: solid red; */
+    position: relative;
+    top: -8%;
 }
-
 
 .social-links-container a {
     display: inline-block;
 }
 
-.social-links-container .link-btn {    
-    height: 50px;
-    width: 50px;
+.social-links-container .link-btn {
+    height: 85px;
+    width: 85px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 30px;
     text-decoration: none;
 
     display: flex;
@@ -80,19 +95,36 @@ input, textarea {
     align-items: center;
 }
 
-.social-links-container .fa-solid, .fa-brands {
-    font-size: 1.5em;
+.social-links-container .fa-solid,
+.fa-brands {
+    font-size: 2.8em;
     color: white;
 }
 
-.instagram {background-image: linear-gradient(to top right, #fcaf45, #c13584);}
-.github {background-color: hsl(0, 0%, 20%);}
-.twitter {background-color: hsl(203, 89%, 53%);}
-.email {background-color: hsl(5, 81%, 56%);}
-.linktree {background-color: hsl(0, 0%, 20%);}
-.facebook {background-color: hsl(214, 89%, 52%);}
-.linkedin {background-color: hsl(201, 100%, 35%);}
-.fiverr {background-color: hsl(135, 100%, 35%);}
+.instagram {
+    background-image: linear-gradient(to top right, #fcaf45, #c13584);
+}
+.github {
+    background-color: hsl(0, 0%, 20%);
+}
+.twitter {
+    background-color: hsl(203, 89%, 53%);
+}
+.email {
+    background-color: hsl(5, 81%, 56%);
+}
+.linktree {
+    background-color: hsl(0, 0%, 20%);
+}
+.facebook {
+    background-color: hsl(214, 89%, 52%);
+}
+.linkedin {
+    background-color: hsl(201, 100%, 35%);
+}
+.fiverr {
+    background-color: hsl(135, 100%, 35%);
+}
 
 footer {
     background-color: #222;
@@ -105,14 +137,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 footer > * {
     margin: 3px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 767px) {
     form {
         width: 60%;
         margin: 0 auto;
@@ -124,11 +156,12 @@ footer > * {
     }
 
     .social-links-container .link-btn {
-        height: 75px;
-        width: 75px;
+        height: 100px;
+        width: 100px;
     }
 
-    .social-links-container .fa-solid, .fa-brands {
-        font-size: 2em;
+    .social-links-container .fa-solid,
+    .fa-brands {
+        font-size: 3em;
     }
 }
