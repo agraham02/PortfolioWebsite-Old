@@ -12,7 +12,7 @@ html {
 body {
     height: 100vh;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     /* font-size: 12px; */
 }
 
@@ -45,6 +45,7 @@ nav .logo {
     display: inline-block;
     border-radius: 5px;
     text-decoration: none;
+    
 }
 
 #hamburgerIcon {
@@ -122,6 +123,7 @@ nav .links a:hover {
     color: #818181;
     transition: 0.3s;
     margin: 10px;
+    /* text-shadow: 0 0 1px black, 0 0 1px white; */
 }
 
 #mobileOverlay .links a:hover,
@@ -172,6 +174,12 @@ section .title {
 
 header .title {
     margin: 5px;
+    /* font-family: "Tangerine", Arial, Helvetica, sans-serif; */
+}
+header .title h1 {
+    margin: 5px;
+    font-size: 3em;
+    font-family: "Tangerine", Arial, Helvetica, sans-serif;
 }
 
 header .title .extra {
@@ -182,16 +190,23 @@ header .title .extra {
 section .content {
     /* border: solid red; */
     height: 70%;
+    /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
 }
+
 
 header .bottom,
 section .bottom {
     /* border: solid red; */
     height: 15%;
-
+    /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+section .content, section .bottom {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 header .title {
@@ -274,6 +289,7 @@ header .fa-angle-down {
     border: none;
     box-shadow: 0 8px #999;
     color: white;
+    width: 20%;
 }
 
 .btn a {
@@ -282,7 +298,7 @@ header .fa-angle-down {
     display: inline-block;
     height: 100%;
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 10px;
 }
 
 .btn:active {

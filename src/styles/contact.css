@@ -66,8 +66,9 @@ textarea {
 
 .social-links-container {
     margin: 0 auto;
-    padding: 10px;
-    height: 70%;
+    /* padding: 10px; */
+    /* height: 70%; */
+    overflow-y: auto;
 
     display: flex;
     /* flex-direction: column; */
@@ -75,8 +76,8 @@ textarea {
     justify-content: center;
     align-items: center;
     /* border: solid red; */
-    position: relative;
-    top: -8%;
+    /* position: relative; */
+    /* top: -8%; */
 }
 
 .social-links-container a {

@@ -90,6 +90,10 @@
     background-color: initial;
 }
 
+.item.regex .bars .four, .item.regex .bars .three {
+    background-color: initial;
+}
+
 /* Libraries */
 .item.react .bars > * {
     /* background-color: blue; */
