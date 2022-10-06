@@ -3,11 +3,11 @@ Created by Ahmad Graham
 
 
 ## Projects to include:
-- [ ] chatbot
-- [ ] College Connect
-- [ ] E-commerce site
-- [ ] Wordle Clone
-- [ ] Pathfinding Visualizer
-- [ ] Sorting Visualizer
-- [ ] Monty Hall Game
-- [ ] Cubi3
+- [x] chatbot
+- [x] College Connect
+- [x] E-commerce site
+- [x] Wordle Clone
+- [x] Pathfinding Visualizer
+- [x] Sorting Visualizer
+- [x] Monty Hall Game
+- [x] Cubi3

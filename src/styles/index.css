@@ -289,7 +289,7 @@ header .fa-angle-down {
     border: none;
     box-shadow: 0 8px #999;
     color: white;
-    width: 20%;
+    /* width: 20%; */
 }
 
 .btn a {
